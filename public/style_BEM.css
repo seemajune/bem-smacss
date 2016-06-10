@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+
+a {
+  color: #00a5d9;
+}
+
+.assignment {
+  width: 100%;
+  border-left: 0 none;
+  .transition(background 0.5s ease);
+  .transition(max-height 0.3s ease);
+  margin-left: -2px;
+  border-color: #e1e1e4;
+  display: block;
+}
+
+.assignment__card {
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+.assignment__card__title {
+  overflow: hidden;
+  cursor: pointer;
+  height: 38px;
+  margin: 1px 0 0 0;
+  display: inline-block;
+  font: 14px 'Pontano Sans', sans-serif;
+  padding: 0 0 0 15px;
+}
+
+.assignment__card__summary {
+
+}
+
+.assignment__card--focus {
+  text-decoration: underline;
+  background-color: #666;
+}
+
