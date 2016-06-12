@@ -1,12 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
 
+i {
+  color: #fff;
+  padding: 15%;
+}
+
 .assignment { /*block*/
   width: 80%;
+  max-width: 750px;
   .transition(background 0.5s ease);
   .transition(max-height 0.3s ease);
   border-color: #e1e1e4;
   display: block;
-  padding: 5%;
+  padding: 1%;
+}
+
+@media only screen and (max-width:980px) {
+  .assignment {
+    max-width: 450px;
+  }
 }
 
 .assignment__card { /*block__element*/
@@ -17,22 +29,47 @@
   position: relative;
 }
 
+@media only screen and (max-width:980px) {
+  .assignment__card {
+    float: left;
+    width: 100%;
+  }
+}
+
 .assignment__card__title {
   overflow: hidden;
   cursor: pointer;
   height: 38px;
-  font-size: 1.5em;
   font-weight: bolder;
   color: #fff;
-  background-color: #1d2172;
-  padding-left: 1%;
+  background-color: #2badd9;
+}
+
+.assignment__card__title h2 {
+  font-size: 1.5em;
+  padding-left: 2%;
+  margin: 0;
 }
 
 .assignment__card__summary {
   font-size: 0.9em;
-  width: 90%;
-  float: right;
-  margin: 2% 3% 0 0;
+  width: 80%;
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+}
+
+@media only screen and (max-width:980px) {
+  .assignment__card__summary {
+    width: 70%;
+    font-size: .8em;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .assignment__card__summary {
+    font-size: .7em;
+  }
 }
 
 .assignment__card--hidden { /*block__element--modifier*/
@@ -45,18 +82,23 @@
 }
 
 .btn {
-  display: block;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  padding: 6px;
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 12px;
+  float: right;
+}
+
+@media only screen and (max-width:980px) {
+  .btn {
+    padding: 1px 5px;
+  }
 }
 
 .btn__watch {
   border: 1px solid #fff;
   border-radius: 5px;
   color: #fff;
-  background-color: #2badd9;
+  background-color: #1d2172;
 }
 
 .btn__watch:hover {
@@ -66,10 +108,14 @@
 .gutter {
   display: inline-block;
   background-color: #ccc;
-  width: 38px;
+  width: 40px;
   height: 180px;
 }
 
 .gutter--left {
   float: left;
+}
+
+.gutter--left:hover {
+  background-color: #2DBFC3;
 }
