@@ -2,7 +2,7 @@
 
 i {
   color: #fff;
-  padding: 15%;
+  padding: 10%;
 }
 
 .assignment { /*block*/
@@ -83,14 +83,17 @@ i {
 
 .btn {
   display: inline-block;
-  padding: 2px 10px;
-  font-size: 12px;
+  padding: 5px 15px;
+  font-size: 14px;
+  margin-top: 3%;
   float: right;
 }
 
 @media only screen and (max-width:980px) {
   .btn {
     padding: 1px 5px;
+    margin: 0;
+    font-size: 12px;
   }
 }
 
