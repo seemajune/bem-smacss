@@ -76,11 +76,6 @@ i {
   display: none;
 }
 
-.assignment__card--hover {
-  text-decoration: underline;
-  background-color: #;
-}
-
 .btn {
   display: inline-block;
   padding: 5px 15px;

@@ -1,0 +1,42 @@
+
+/* BASE/DEFAULT STYLES */
+i { 
+  color: #fff;
+}
+
+input[type=text] {
+  border-color: #999;
+}
+
+.assignment { /* MODULE */
+  border-color: #e1e1e4;
+}
+
+.assignment-card {
+  border-color: #e1e1e4;
+}
+
+.assignment-card-title {
+  color: #fff;
+  background-color: #2badd9;
+}
+
+/*To help battle against specificity
+double up on your class names */
+.btn.btn-watch {
+  border-color: #fff;
+  color: #fff;
+  background-color: #1d2172;
+}
+
+.btn-watch:hover {
+  background-color: #1e7997;
+}
+
+.gutter {
+  background-color: #ccc;
+}
+
+.gutter-left:hover {
+  background-color: #2DBFC3;
+}
