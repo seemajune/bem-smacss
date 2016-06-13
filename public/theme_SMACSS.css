@@ -1,42 +1,46 @@
 
 /* BASE/DEFAULT STYLES */
 i { 
-  color: #fff;
+    color: #fff;
 }
 
 input[type=text] {
-  border-color: #999;
+    border-color: #999;
 }
 
 .assignment { /* MODULE */
-  border-color: #e1e1e4;
+    border-color: #e1e1e4;
 }
 
 .assignment-card {
-  border-color: #e1e1e4;
+    border-color: #e1e1e4;
 }
 
 .assignment-card-title {
-  color: #fff;
-  background-color: #2badd9;
+    color: #fff;
+    background-color: #2badd9;
+}
+
+.assignment-card-summary {
+    color: #666;
 }
 
 /*To help battle against specificity
 double up on your class names */
 .btn.btn-watch {
-  border-color: #fff;
-  color: #fff;
-  background-color: #1d2172;
+    border-color: #fff;
+    color: #fff;
+    background-color: #1d2172;
 }
 
 .btn-watch:hover {
-  background-color: #1e7997;
+    background-color: #1e7997;
 }
 
 .gutter {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 
 .gutter-left:hover {
-  background-color: #2DBFC3;
+    background-color: #2DBFC3;
 }
