@@ -8,104 +8,109 @@ i {
   padding: 10%;
 }
 
+/*Format your declarations as follows:
+1. box : displau/float/position/left/top/height/width etc.;
+2. border
+3. background
+4. text
+4. other */
+
 .assignment { /* MODULE */
-  width: 80%;
-  max-width: 750px;
-  .transition(background 0.5s ease);
-  .transition(max-height 0.3s ease);
-  display: block;
-  padding: 1%;
+    display: block;  
+    width: 80%;
+    max-width: 750px;
+    .transition(background 0.5s ease);
+    .transition(max-height 0.3s ease);
+    padding: 1%;
 }
 
 @media only screen and (max-width:980px) {
-  .assignment {
-    max-width: 450px;
-  }
+    .assignment {
+        max-width: 450px;
+    }
 }
 
 .assignment-card { /* related elements within a module use the base name as prefix */
-  border: 1px solid;
-  border-radius: 5px;
-  font-family: 'Pontano Sans', sans-serif;
-  display: inline-block;
-  position: relative;
+    display: inline-block;
+    position: relative;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: 'Pontano Sans', sans-serif;
 }
 
 @media only screen and (max-width:980px) {
-  .assignment-card {
-    float: left;
-    width: 100%;
-  }
+    .assignment-card {
+        float: left;
+        width: 100%;
+    }
 }
 
 .assignment-card-title {
-  overflow: hidden;
-  cursor: pointer;
-  height: 38px;
-  font-weight: bolder;
+    height: 38px;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: bolder;
 }
 
 .assignment-card-title h2 {
-  font-size: 1.5em;
-  padding-left: 2%;
-  margin: 0;
+    padding-left: 2%;
+    margin: 0;
+    font-size: 1.5em;
 }
 
 .assignment-card-summary {
-  font-size: 0.9em;
-  width: 80%;
-  display: inline-block;
-  float: left;
-  margin-left: 2%;
+    width: 80%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+    font-size: 0.9em;
 }
 
 @media only screen and (max-width:980px) {
-  .assignment-card-summary {
-    width: 70%;
-    font-size: .8em;
-  }
+    .assignment-card-summary {
+        width: 70%;
+        font-size: .8em;
+    }
 }
 
 @media only screen and (max-width:600px) {
-  .assignment-card-summary {
-    font-size: .7em;
-  }
+    .assignment-card-summary {
+        font-size: .7em;
+    }
 }
 
 .is-hidden { /*STATE*/
-  display: none;
+    display: none;
 }
 
 .btn {
-  display: inline-block;
-  padding: 5px 15px;
-  font-size: 14px;
-  margin-top: 3%;
-  float: right;
+    display: inline-block;
+    margin-top: 3%;
+    float: right;
+    padding: 5px 15px;
+    font-size: 14px;
 }
 
 @media only screen and (max-width:980px) {
-  .btn {
-    padding: 1px 5px;
-    margin: 0;
-    font-size: 12px;
-  }
+    .btn {
+        padding: 1px 5px;
+        margin: 0;
+        font-size: 12px;
+    }
 }
 
-/*To help battle against specificity
-double up on your class names */
-
+/*To help battle against specificity, double up on your class names */
 .btn.btn-watch {
-  border: 1px solid;
-  border-radius: 5px;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 .gutter {
-  display: inline-block;
-  width: 40px;
-  height: 180px;
+    display: inline-block;
+    width: 40px;
+    height: 180px;
 }
 
 .gutter.gutter-left {
-  float: left;
+    float: left;
 }
