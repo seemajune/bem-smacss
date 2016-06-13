@@ -1,11 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
 
-i {
+/* BASE/DEFAULT STYLES */
+html, body, form { margin: 0; padding: 0; }
+input[type=text] { border: 1px solid #999; }
+
+i { 
   color: #fff;
   padding: 10%;
 }
 
-.assignment { /*block*/
+.assignment { /* MODULE */
   width: 80%;
   max-width: 750px;
   .transition(background 0.5s ease);
@@ -21,7 +25,7 @@ i {
   }
 }
 
-.assignment__card { 
+.assignment-card { /* related elements within a module use the base name as prefix */
   border: 1px solid #e1e1e4;
   border-radius: 5px;
   font-family: 'Pontano Sans', sans-serif;
@@ -30,13 +34,13 @@ i {
 }
 
 @media only screen and (max-width:980px) {
-  .assignment__card {
+  .assignment-card {
     float: left;
     width: 100%;
   }
 }
 
-.assignment__card__title {
+.assignment-card-title {
   overflow: hidden;
   cursor: pointer;
   height: 38px;
@@ -45,13 +49,13 @@ i {
   background-color: #2badd9;
 }
 
-.assignment__card__title h2 {
+.assignment-card-title h2 {
   font-size: 1.5em;
   padding-left: 2%;
   margin: 0;
 }
 
-.assignment__card__summary {
+.assignment-card-summary {
   font-size: 0.9em;
   width: 80%;
   display: inline-block;
@@ -60,14 +64,14 @@ i {
 }
 
 @media only screen and (max-width:980px) {
-  .assignment__card__summary {
+  .assignment-card-summary {
     width: 70%;
     font-size: .8em;
   }
 }
 
 @media only screen and (max-width:600px) {
-  .assignment__card__summary {
+  .assignment-card-summary {
     font-size: .7em;
   }
 }
@@ -76,7 +80,7 @@ i {
   display: none;
 }
 
-.assignment__card--hover {
+.assignment-card--hover {
   text-decoration: underline;
   background-color: #;
 }
@@ -97,14 +101,14 @@ i {
   }
 }
 
-.btn__watch {
+.btn-watch {
   border: 1px solid #fff;
   border-radius: 5px;
   color: #fff;
   background-color: #1d2172;
 }
 
-.btn__watch:hover {
+.btn-watch:hover {
   background-color: #1e7997;
 }
 
@@ -115,10 +119,10 @@ i {
   height: 180px;
 }
 
-.gutter--left {
+.gutter-left {
   float: left;
 }
 
-.gutter--left:hover {
+.gutter-left:hover {
   background-color: #2DBFC3;
 }
