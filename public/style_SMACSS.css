@@ -30,7 +30,7 @@ i {
     }
 }
 
-.assignment-card { /* related elements within a module use the base name as prefix */
+.assignment-card { /* child elements within a module use the base name as prefix */
     display: inline-block;
     position: relative;
     border: 1px solid;
